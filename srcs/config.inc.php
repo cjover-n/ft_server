@@ -3,7 +3,7 @@
  * This is needed for cookie based authentication to encrypt password in
  * cookie. Needs to be 32 chars long.
  */
-$cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+$cfg['blowfish_secret'] = '102kd93kc93kk19dk3mvl109m2ldpsbpa'; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 /* Servers configuration */
 $i = 0;
 /* First server */
