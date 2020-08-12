@@ -1,0 +1,221 @@
+body {
+    font-family: Rubik;
+}
+
+html, body {
+    height: auto;
+    min-height: 100vh;
+}
+body {
+    position: relative;
+}
+body {
+    color: #232323;
+}
+body {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.cid-qTkA127IK8 {
+    background-image: url(../../assets/images/coalitions-wallpaper.jpg);
+}
+.mbr-fullscreen {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+section {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section, .container, .container-fluid {
+    position: relative;
+    word-wrap: break-word;
+}
+section {
+    background-color: #eeeeee;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+}
+body {
+    font-family: Rubik;
+}
+body {
+    color: #232323;
+}
+body {
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.align-center {
+    text-align: center;
+}
+section, .container, .container-fluid {
+    position: relative;
+    word-wrap: break-word;
+}
+
+.row {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
+
+.mbr-white {
+    color: #ffffff;
+}
+
+.display-1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4.25rem;
+    font-display: swap;
+}
+.stroke {
+    text-shadow: 4px 4px 4px #cb3234;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+.mbr-section-title {
+    font-style: normal;
+    line-height: 1.2;
+}
+
+.display-5 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-display: swap;
+}
+
+.stroke {
+    text-shadow: 4px 4px 4px #cb3234;
+}
+
+.mbr-section-btn {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    font-size: 0;
+}
+
+.mbr-section-btn a.btn:not(.btn-form) {
+    border-radius: 100px;
+}
+.btn-secondary, .btn-secondary:active {
+    background-color: #58d220 !important;
+    border-color: #58d220 !important;
+    color: #ffffff !important;
+}
+
+.btn-md {
+    padding: 1rem 3rem;
+    border-radius: 3px;
+}
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 3px;
+}
+.display-4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-display: swap;
+}
+.btn-md {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: .4rem .8rem !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.btn {
+    font-weight: 500;
+    border-width: 2px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: .4rem .8rem;
+    white-space: normal;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: -webkit-inline-flex;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4 {
+    line-height: 1;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.mbr-section-btn a.btn:not(.btn-form) {
+    border-radius: 100px;
+}
+.btn-primary, .btn-primary:active {
+    background-color: #149dcc !important;
+    border-color: #149dcc !important;
+    color: #ffffff !important;
+}
+
+.btn-md {
+    padding: 1rem 3rem;
+    border-radius: 3px;
+}
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 3px;
+}
+.display-4 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-display: swap;
+}
+.btn-md {
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: .4rem .8rem !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.btn {
+    font-weight: 500;
+    border-width: 2px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin: .4rem .8rem;
+    white-space: normal;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: -webkit-inline-flex;
+}

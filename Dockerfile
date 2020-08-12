@@ -6,7 +6,7 @@
 #    By: cjover-n <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/16 18:55:27 by cjover-n          #+#    #+#              #
-#    Updated: 2020/08/10 20:25:41 by cjover-n         ###   ########.fr        #
+#    Updated: 2020/08/12 19:51:49 by cjover-n         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,11 +44,16 @@ COPY srcs/wp-config.php /var/www/html/wordpress
 
 #DATABASE
 COPY srcs/wordpress.sql ./root/
+COPY srcs/phpmyadmin.sql ./root/
 RUN service mysql start && \
 echo "CREATE DATABASE wordpress;" | mysql -u root && \
 echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost';" | mysql -u root && \
 echo "update mysql.user set plugin = 'mysql_native_password' where user='root';" | mysql -u root  && \
-mysql wordpress -u root --password=  < ./root/wordpress.sql
+mysql wordpress -u root --password=  < ./root/wordpress.sql && \
+echo "CREATE DATABASE phpmyadmin;" | mysql -u root && \
+echo "GRANT ALL PRIVILEGES ON phpmyadmin.* TO 'root'@'localhost';" | mysql -u root && \
+echo "update mysql.user set plugin = 'mysql_native_password' where user='root';" | mysql -u root  && \
+mysql phpmyadmin -u root --password=  < ./root/phpmyadmin.sql
 
 #PHPMYADMIN
 COPY srcs/config.inc.php ./root/
@@ -57,12 +62,6 @@ mkdir /var/www/html/phpmyadmin && \
 tar xzf phpMyAdmin-5.0.2-english.tar.gz --strip-components=1 -C /var/www/html/phpmyadmin && \
 cp /root/config.inc.php /var/www/html/phpmyadmin/
 RUN chmod 660 var/www/html/phpmyadmin/config.inc.php && chown -R www-data:www-data /var/www/html/phpmyadmin
-COPY srcs/phpmyadmin.sql ./root/
-RUN service mysql start && \
-echo "CREATE DATABASE phpmyadmin;" | mysql -u root && \
-echo "GRANT ALL PRIVILEGES ON phpmyadmin.* TO 'root'@'localhost';" | mysql -u root && \
-echo "update mysql.user set plugin = 'mysql_native_password' where user='root';" | mysql -u root  && \
-mysql phpmyadmin -u root --password=  < ./root/phpmyadmin.sql
 
 COPY srcs/assets var/www/html/assets
 COPY srcs/index.html var/www/html/index.html
@@ -71,7 +70,9 @@ COPY srcs/index.html var/www/html/index.html
 
 EXPOSE 80 443
 
-CMD service nginx start && \
-  service mysql start && \
-  service php7.3-fpm start && \
-  sleep infinity
+ENTRYPOINT 	service nginx start && \
+			service php7.3-fpm start && \
+			service mysql start && \
+			sleep infinity && \
+			wait
+
